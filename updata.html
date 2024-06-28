@@ -1,0 +1,4086 @@
+﻿<!DOCTYPE html>
+<html lang="cn">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Askbootstrap">
+      <meta name="author" content="Askbootstrap">
+      <title>上古洪荒江湖V2.0中变-品牌大区</title>
+      <link rel="stylesheet" href="layui/css/layui.css">
+      <link href="css/up.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="head">
+         <h1>上古洪荒江湖-特色装备升级/EQUIPMENT</h1>
+      </div>
+      <div class="page">
+         <div class="pagebox gamepage">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px;">
+               <legend>装备进阶/装备强化/材料合成 <em style="font-size:14px; color:#666">(请点击下面选项卡查看玩法/详情信息)</em></legend>
+             </fieldset>
+             <div class="layui-tab layui-tab-brief">
+               <ul class="layui-tab-title">
+                 <li class="layui-this">武器进阶</li>
+                 <li>防具进阶</li>
+                 <li>装备强化</li>
+                 <li>首饰加工</li>
+                 <li>门甲进阶</li>
+                 <li>内甲进阶</li>
+                 <li>装备进阶属性</li>
+                 <li>材料合成及出处</li>
+                 <li>分解装备</li>
+                 <li>披风加工</li>
+                 
+               </ul>
+               <div class="layui-tab-content">
+                 <div class="layui-tab-item layui-show">
+                    <div class="shgame">
+                     <blockquote class="layui-elem-quote">武器进阶系统</blockquote>
+                     <div class="game-text">
+                        <span class="layui-badge layui-badge-rim">把武器放在背包第一格 游戏内输入</span>
+                        <span class="layui-badge">命令：!进阶装备 </span>
+                        <span class="layui-badge layui-badge-rim">即可完成（用于进阶北海武器，进阶为 灿金北海武器）</span>
+                        
+                     </div>
+                     
+                        <table class="layui-table">
+                           <colgroup>
+                             <col width="150">
+                             <col width="150">
+                             <col width="200">
+                             <col>
+                           </colgroup>
+                           <thead>
+                             <tr>
+                               <th>需要装备</th>
+                               <th>需要升级属性至</th>
+                               <th>需要材料</th>
+                               <th>需要元宝</th>
+                               <th>进阶后获得装备</th>
+                             </tr> 
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td>
+                                  <img src="img/bbg/101200001.gif" alt="">
+                                  <span></span>
+                               </td>
+                               <td>WG70*4</td>
+                               <td>
+                                 <img src="img/bbg/900000073.gif" alt="">
+                                 <span>神石</span>
+                               </td>
+                               <td>10000元宝</td>
+                               <td>
+                                 <img src="img/bbg/100200821.gif" alt="">
+                                 <span>灿金北海-刀</span>
+                               </td>
+                             </tr>
+                            
+                           </tbody>
+                         </table>
+                         <blockquote class="layui-elem-quote layui-quote-nm">
+                           说明：武器默认为WG60的北海，低于WG60的北海无法进行进阶，进阶武器前需要先将武器升级至需要属性
+                           <br>升级方法请查看 - 装备进阶属性 - 模块说明，满足上表条件武器即可进阶，以上武器各职业方法相同
+                         </blockquote>
+                         <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                           <legend>高级武器进阶</legend>
+                         </fieldset>
+                         <blockquote class="layui-elem-quote layui-quote-nm">
+                          说明：为了更好的提高游戏体验，高级武器进阶只限于综合大区，新区封印此升级功能。
+                          <br>合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表武器各职业方法相同
+                        </blockquote>
+                         <div class="game-text">
+                           <span class="layui-badge layui-badge-rim">把武器放在背包第一格 根据自己的职业正邪划分，输入游戏内进阶打造武器</span>
+                           <span class="layui-badge">命令：!打造邪武器 或 !打造正武器 </span>
+                           <span class="layui-badge layui-badge-rim">即可完成（用于灿金北海武器，利用武器图纸 打造更高级的武器）</span>
+                           
+                        </div>
+                        <table class="layui-table mactable">
+                           <colgroup>
+                             <col width="150">
+                             <col width="150">
+                             <col width="200">
+                             <col>
+                           </colgroup>
+                           <thead>
+                             <tr>
+                               <th>需要装备</th>
+                               <th>升级属性至</th>
+                               <th>强化属性至</th>
+                               <th>(正)需要材料</th>
+                               <th>(邪)需要材料</th>
+                               <th>需要元宝</th>
+                               <th>进阶后获得装备</th>
+                             </tr> 
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td>
+                                  <img src="img/bbg/100200821.gif" alt=""><br>
+                                  <span>灿金北海-刀</span>
+                               </td>
+                               <td>WG80*4</td>
+                               <td>强化至20</td>
+                               <td>
+                                 
+                                 <img src="img/bbg/900000121.gif" alt="">
+                                 <span>正气玄铁</span>
+                                 <span>加</span>
+                                 <img src="img/bbg/900000123.gif" alt="">
+                                 <span>110级图纸(刀)</span>
+                               </td>
+                               <td>
+                                <img src="img/bbg/900000122.gif" alt="">
+                                <span>邪火玄铁</span>
+                                <span>加</span>
+                                <img src="img/bbg/900000123.gif" alt="">
+                                <span>110级图纸(刀)</span>
+                              </td>
+                               <td>50000元宝</td>
+                               <td>
+                                 <img src="img/bbg/100201037.gif" alt=""><br>
+                                 <span>(正)龙息刀</span>
+                                 <img src="img/bbg/100202038.gif" alt=""><br>
+                                 <span>(邪)斩月刀</span>
+                               </td>
+                             </tr>
+                             <tr>
+                              <td>
+                                <img src="img/bbg/100201037.gif" alt=""><br>
+                                <span>(正)龙息刀</span>
+                                <img src="img/bbg/100202038.gif" alt=""><br>
+                                <span>(邪)斩月刀</span>
+                              </td>
+                              <td>WG100*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000128.gif" alt="">
+                                <span>120级图纸(刀)</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000128.gif" alt="">
+                               <span>120级图纸(刀)</span>
+                             </td>
+                              <td>50000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201039.gif" alt=""><br>
+                                <span>(正)帝皇战刀</span>
+                                <img src="img/bbg/100202040.gif" alt=""><br>
+                                <span>(邪)鬼影狂刀</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201039.gif" alt=""><br>
+                                <span>(正)帝皇战刀</span>
+                                <img src="img/bbg/100202040.gif" alt=""><br>
+                                <span>(邪)鬼影狂刀</span>
+                              </td>
+                              <td>WG120*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000133.gif" alt="">
+                                <span>130级图纸(刀)</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000133.gif" alt="">
+                               <span>130级图纸(刀)</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201230.gif" alt=""><br>
+                                <span>(正)未完成的鳌天斩</span>
+                                <img src="img/bbg/100202240.gif" alt=""><br>
+                                <span>(邪)未完成的泣血殇</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201230.gif" alt=""><br>
+                                <span>(正)未完成的鳌天斩</span>
+                                <img src="img/bbg/100202240.gif" alt=""><br>
+                                <span>(邪)未完成的泣血殇</span>
+                              </td>
+                              <td>WG140*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000138.gif" alt="">
+                                <span>130级图纸真(刀)</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000138.gif" alt="">
+                               <span>130级图纸真(刀)</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201250.gif" alt=""><br>
+                                <span>(正)鳌天斩</span>
+                                <img src="img/bbg/100202260.gif" alt=""><br>
+                                <span>(邪)泣血殇</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201250.gif" alt=""><br>
+                                <span>(正)鳌天斩</span>
+                                <img src="img/bbg/100202260.gif" alt=""><br>
+                                <span>(邪)泣血殇</span>
+                              </td>
+                              <td>WG160*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000143.gif" alt="">
+                                <span>130级图纸神真(刀)</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000143.gif" alt="">
+                               <span>130级图纸神真(刀)</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201251.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202261.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201251.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202261.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                              <td>WG180*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000231.gif" alt="">
+                                <span>140级武器打造图纸(刀)</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000231.gif" alt="">
+                               <span>140级武器打造图纸(刀)</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201252.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202262.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201252.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202262.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                              <td>WG200*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000236.gif" alt="">
+                                <span>140级武器打造图纸(刀)-真</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000236.gif" alt="">
+                               <span>140级武器打造图纸(刀)-真</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201253.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202263.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="img/bbg/100201253.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202263.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                              <td>WG220*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000241.gif" alt="">
+                                <span>140级武器打造图纸(刀)-神真</span>
+                              </td>
+                              <td>
+                               <img src="img/bbg/900000241.gif" alt="">
+                               <span>140级武器打造图纸(刀)-神真</span>
+                             </td>
+                              <td>500000元宝</td>
+                              <td>
+                                <img src="img/bbg/100201254.gif" alt=""><br>
+                                <span>(正)真-鳌天斩</span>
+                                <img src="img/bbg/100202264.gif" alt=""><br>
+                                <span>(邪)真-泣血殇</span>
+                              </td>
+                            </tr>
+                           </tbody>
+                         </table>
+                     
+                    </div>
+                 </div>
+                 <div class="layui-tab-item ">
+                  <div class="shgame">
+                    <blockquote class="layui-elem-quote">防具进阶系统</blockquote>
+                    <div class="game-text">
+                       <span class="layui-badge layui-badge-rim">把防具放在背包第一格 游戏内输入</span>
+                       <span class="layui-badge">命令：!进阶装备 </span>
+                       <span class="layui-badge layui-badge-rim">即可完成（用于进阶斗神/护手/衣服/鞋）</span>
+                       
+                    </div>
+                    
+                       <table class="layui-table">
+                          <colgroup>
+                            <col width="150">
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>需要装备</th>
+                              <th>需要升级属性至</th>
+                              <th>需要强化属性至</th>
+                              <th>需要材料</th>
+                              <th>需要元宝</th>
+                              <th>进阶后获得装备</th>
+                            </tr> 
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                 <img src="img/bbg/900000059.gif" alt="">
+                                 <span>斗神护手</span>
+                              </td>
+                              <td>WF120*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000073.gif" alt="">
+                                <span>神石</span>
+                              </td>
+                              <td>10000元宝</td>
+                              <td>
+                                <img src="img/bbg/33.gif" alt="">
+                                <span>焚寂护手[神]</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                 <img src="img/bbg/900000060.gif" alt="">
+                                 <span>斗神战靴</span>
+                              </td>
+                              <td>WF120*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000073.gif" alt="">
+                                <span>神石</span>
+                              </td>
+                              <td>10000元宝</td>
+                              <td>
+                                <img src="img/bbg/32.gif" alt="">
+                                <span>焚寂战靴[神]</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                 <img src="img/bbg/900000061.gif" alt="">
+                                 <span>斗神战衣</span>
+                              </td>
+                              <td>WF120*4</td>
+                              <td>强化至20</td>
+                              <td>
+                                <img src="img/bbg/900000073.gif" alt="">
+                                <span>神石</span>
+                              </td>
+                              <td>10000元宝</td>
+                              <td>
+                                <img src="img/bbg/34.gif" alt="">
+                                <span>焚寂战衣[神]</span>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                        
+                        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                          <legend>高级防具进阶</legend>
+                        </fieldset>
+                        <blockquote class="layui-elem-quote layui-quote-nm">
+                         说明：为了更好的提高游戏体验，高级武器进阶只限于综合大区，新区封印此升级功能。
+                         <br>合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表各职业防具进阶方法相同
+                       </blockquote>
+                       <div class="game-text">
+                        <span class="layui-badge layui-badge-rim">把防具放在背包第一格 游戏内输入</span>
+                        <span class="layui-badge">命令：!进阶装备 </span>
+                        <span class="layui-badge layui-badge-rim">即可完成（用于进阶斗神/护手/衣服/鞋）</span>
+                        
+                     </div>
+                       <table class="layui-table">
+                        <colgroup>
+                          <col width="150">
+                          <col width="150">
+                          <col width="200">
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>需要装备</th>
+                            <th>需要升级属性至</th>
+                            <th>需要强化属性至</th>
+                            <th>需要材料</th>
+                            <th>需要元宝</th>
+                            <th>进阶后获得装备</th>
+                          </tr> 
+                        </thead>
+                        <tbody>
+                         
+                          <tr>
+                            <td>
+                               <img src="img/bbg/33.gif" alt="">
+                               <span>焚寂护手[神]</span>
+                            </td>
+                            <td>WF140*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/38.gif" alt="">
+                              <span>龙渊护手[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/32.gif" alt="">
+                               <span>焚寂战靴[神]</span>
+                            </td>
+                            <td>WF140*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/37.gif" alt="">
+                              <span>龙渊战靴[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/34.gif" alt="">
+                               <span>焚寂战衣[神]</span>
+                            </td>
+                            <td>WF140*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/39.gif" alt="">
+                              <span>龙渊战衣[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/38.gif" alt="">
+                               <span>龙渊护手[神]</span>
+                            </td>
+                            <td>WF160*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/43.gif" alt="">
+                              <span>东皇护手[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/37.gif" alt="">
+                               <span>龙渊战靴[神]</span>
+                            </td>
+                            <td>WF160*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/42.gif" alt="">
+                              <span>东皇战靴[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/39.gif" alt="">
+                               <span>龙渊战衣[神]</span>
+                            </td>
+                            <td>WF160*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000089.gif" alt="">
+                              <span>五色神玉*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/44.gif" alt="">
+                              <span>东皇战衣[神]</span>
+                            </td>
+                          </tr>
+
+
+                          <tr>
+                            <td>
+                              <img src="img/bbg/43.gif" alt="">
+                              <span>东皇护手[神]</span>
+                            </td>
+                            <td>WF180*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000250.gif" alt="">
+                              <span>天穹之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/48.gif" alt="">
+                              <span>天穹护手[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/42.gif" alt="">
+                              <span>东皇战靴[神]</span>
+                            </td>
+                            <td>WF180*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000250.gif" alt="">
+                              <span>天穹之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/47.gif" alt="">
+                              <span>天穹战靴[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/44.gif" alt="">
+                              <span>东皇战衣[神]</span>
+                            </td>
+                            <td>WF180*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000250.gif" alt="">
+                              <span>天穹之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/49.gif" alt="">
+                              <span>天穹战衣[神]</span>
+                            </td>
+                          </tr>
+
+
+                          <tr>
+                            <td>
+                              <img src="img/bbg/48.gif" alt="">
+                              <span>天穹护手[神]</span>
+                            </td>
+                            <td>WF200*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000251.gif" alt="">
+                              <span>沧海之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/53.gif" alt="">
+                              <span>沧海护手[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/47.gif" alt="">
+                              <span>天穹战靴[神]</span>
+                            </td>
+                            <td>WF200*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000251.gif" alt="">
+                              <span>沧海之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/52.gif" alt="">
+                              <span>沧海战靴[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/49.gif" alt="">
+                              <span>天穹战衣[神]</span>
+                            </td>
+                            <td>WF200*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000251.gif" alt="">
+                              <span>沧海之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/54.gif" alt="">
+                              <span>沧海战衣[神]</span>
+                            </td>
+                          </tr>
+                         
+
+
+                          <tr>
+                            <td>
+                              <img src="img/bbg/53.gif" alt="">
+                              <span>沧海护手[神]</span>
+                            </td>
+                            <td>WF220*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000252.gif" alt="">
+                              <span>万神之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/58.gif" alt="">
+                              <span>万神护手[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/52.gif" alt="">
+                              <span>沧海战靴[神]</span>
+                            </td>
+                            <td>WF220*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000252.gif" alt="">
+                              <span>万神之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/57.gif" alt="">
+                              <span>万神战靴[神]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="img/bbg/54.gif" alt="">
+                              <span>沧海战衣[神]</span>
+                            </td>
+                            <td>WF220*4</td>
+                            <td>强化至20</td>
+                            <td>
+                              <img src="img/bbg/900000224.gif" alt="">
+                              <span>太古的神力精华*5</span><br>
+                              <img src="img/bbg/900000252.gif" alt="">
+                              <span>万神之神的证明*5</span>
+                            </td>
+                            <td>50000元宝</td>
+                            <td>
+                              <img src="img/bbg/59.gif" alt="">
+                              <span>万神战衣[神]</span>
+                            </td>
+                          </tr>
+                         
+
+
+                        </tbody>
+                      </table>
+                    
+                   </div>
+                 </div>
+                 <div class="layui-tab-item ">
+                  <div class="shgame">
+                   <blockquote class="layui-elem-quote">装备强化系统</blockquote>
+                   <div class="game-text">
+                      <span class="layui-badge layui-badge-rim">把可强化装备放在背包第一格 游戏内输入</span>
+                      <span class="layui-badge">命令：!强化装备 </span>
+                      <span class="layui-badge layui-badge-rim">即可完成10以上装备强化</span>
+                      
+                   </div>
+                   <blockquote class="layui-elem-quote layui-quote-nm">
+                    特别说明：可强化装备为各职业武器/防具，首饰/法器/宠物暂时不可强化。
+                    <br>装备强化后你需要知道的一些问题，特别注意<br>装备强化后游戏内面板属性可能显示不正常，请无需理会，只是显示问题<br>
+                    只是显示问题，属性都正常。<br>只是显示问题，属性都正常。<br>只是显示问题，属性都正常。<br>
+                  </blockquote>
+                   
+                      <table class="layui-table">
+                         <colgroup>
+                           <col width="150">
+                           <col width="150">
+                           <col width="200">
+                           <col>
+                         </colgroup>
+                         <thead>
+                           <tr>
+                             <th>可强化装备</th>
+                             <th>需要强化属性</th>
+                             <th>需要材料</th>
+                             <th>需要元宝</th>
+                             <th>强化峰值</th>
+                           </tr> 
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <td>
+                                <img src="img/bbg/100200821.gif" alt="">
+                                <span>灿金北海-刀</span>
+                             </td>
+                             <td>强化10</td>
+                             <td>
+                               <img src="img/bbg/900000080.gif" alt="">
+                               <span>高级强化石</span>
+                             </td>
+                             <td>10000元宝</td>
+                             <td>峰值-强化20</td>
+                           </tr>
+                           <tr>
+                            <td>
+                               <img src="img/bbg/100201037.gif" alt="">
+                               <span>龙息刀</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201039.gif" alt="">
+                               <span>帝皇战刀</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201230.gif" alt="">
+                               <span>未完成的鳌天斩</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201250.gif" alt="">
+                               <span>鳌天斩</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201252.gif" alt="">
+                               <span>未完成月光圣刀</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201253.gif" alt="">
+                               <span>月光圣刀</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/100201254.gif" alt="">
+                               <span>真-月光圣刀</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>
+                               <img src="img/bbg/900000059.gif" alt="">
+                               <span>斗神护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/900000060.gif" alt="">
+                               <span>斗神战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/900000061.gif" alt="">
+                               <span>斗神战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/900000062.gif" alt="">
+                               <span>斗神门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/900000063.gif" alt="">
+                               <span>斗神内甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/32.gif" alt="">
+                               <span>焚寂战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/33.gif" alt="">
+                               <span>焚寂护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/34.gif" alt="">
+                               <span>焚寂战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/35.gif" alt="">
+                               <span>焚寂战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/36.gif" alt="">
+                               <span>焚寂门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/37.gif" alt="">
+                               <span>龙渊战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/38.gif" alt="">
+                               <span>龙渊护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/39.gif" alt="">
+                               <span>龙渊战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/40.gif" alt="">
+                               <span>龙渊战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/41.gif" alt="">
+                               <span>龙渊门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/42.gif" alt="">
+                               <span>东皇战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/43.gif" alt="">
+                               <span>东皇护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/44.gif" alt="">
+                               <span>东皇战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/45.gif" alt="">
+                               <span>东皇战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/46.gif" alt="">
+                               <span>东皇门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+
+
+                          <tr>
+                            <td>
+                               <img src="img/bbg/47.gif" alt="">
+                               <span>天穹战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/48.gif" alt="">
+                               <span>天穹护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/49.gif" alt="">
+                               <span>天穹战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/50.gif" alt="">
+                               <span>天穹战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/51.gif" alt="">
+                               <span>天穹门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          
+
+                          <tr>
+                            <td>
+                               <img src="img/bbg/52.gif" alt="">
+                               <span>沧海战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/53.gif" alt="">
+                               <span>沧海护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/54.gif" alt="">
+                               <span>沧海战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/55.gif" alt="">
+                               <span>沧海战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/56.gif" alt="">
+                               <span>沧海门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+
+
+                          
+                          <tr>
+                            <td>
+                               <img src="img/bbg/57.gif" alt="">
+                               <span>万神战靴[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/58.gif" alt="">
+                               <span>万神护手[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/59.gif" alt="">
+                               <span>万神战衣[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/60.gif" alt="">
+                               <span>万神战甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                               <img src="img/bbg/61.gif" alt="">
+                               <span>万神门甲[神]</span>
+                            </td>
+                            <td>强化10</td>
+                            <td>
+                              <img src="img/bbg/900000080.gif" alt="">
+                              <span>高级强化石</span>
+                            </td>
+                            <td>10000元宝</td>
+                            <td>峰值-强化20</td>
+                          </tr>
+                          
+                          
+                         </tbody>
+                       </table>
+                      
+                  </div>
+               </div>
+
+               <div class="layui-tab-item">
+                <div class="shgame">
+                 <blockquote class="layui-elem-quote">首饰加工系统</blockquote>
+                 <div class="game-text">
+                    <span class="layui-badge layui-badge-rim">把首饰类装备放在背包第一格 游戏内输入</span>
+                    <span class="layui-badge">命令：!进阶装备 </span>
+                    <span class="layui-badge layui-badge-rim">即可完成（用于斗神战戒/耳环/项链）</span>
+                    
+                 </div>
+                 
+                    <table class="layui-table mactable">
+                       <colgroup>
+                         <col width="150">
+                         <col width="150">
+                         <col width="200">
+                         <col>
+                       </colgroup>
+                       <thead>
+                         <tr>
+                           <th>需要装备</th>
+                           <th>需要升级属性</th>
+                           <th>需要材料</th>
+                           <th>需要元宝</th>
+                           <th>进阶后获得装备</th>
+                         </tr> 
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>
+                              <img src="img/bbg/900000056.gif" alt="">
+                              <span>斗神战戒</span>
+                           </td>
+                           <td>攻击70<br>防御70<br>生命300<br>蓝量300<br></td>
+                           <td>
+                             <img src="img/bbg/900000073.gif" alt="">
+                             <span>神石</span>
+                           </td>
+                           <td>10000元宝</td>
+                           <td>
+                             <img src="img/bbg/26.gif" alt="">
+                             <span>血红戒指</span>
+                           </td>
+                         </tr>
+                         <tr>
+                          <td>
+                             <img src="img/bbg/900000057.gif" alt="">
+                             <span>斗神耳环</span>
+                          </td>
+                          <td>攻击70<br>防御70<br>生命300<br>蓝量300<br></td>
+                          <td>
+                            <img src="img/bbg/900000073.gif" alt="">
+                            <span>神石</span>
+                          </td>
+                          <td>10000元宝</td>
+                          <td>
+                            <img src="img/bbg/14.gif" alt="">
+                            <span>血红耳环</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                             <img src="img/bbg/900000058.gif" alt="">
+                             <span>斗神项链</span>
+                          </td>
+                          <td>攻击70<br>防御70<br>生命300<br>蓝量300<br></td>
+                          <td>
+                            <img src="img/bbg/900000073.gif" alt="">
+                            <span>神石</span>
+                          </td>
+                          <td>10000元宝</td>
+                          <td>
+                            <img src="img/bbg/20.gif" alt="">
+                            <span>血红项链</span>
+                          </td>
+                        </tr>
+                        
+                       </tbody>
+                     </table>
+                     
+                     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                       <legend>高级首饰加工进阶</legend>
+                     </fieldset>
+                     <blockquote class="layui-elem-quote layui-quote-nm">
+                      说明：为了更好的提高游戏体验，高级首饰加工进阶只限于综合大区，新区封印此升级功能。
+                      <br>合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表各职业方法相同
+                    </blockquote>
+                     <div class="game-text">
+                      <span class="layui-badge layui-badge-rim">把首饰类装备放在背包第一格 游戏内输入</span>
+                      <span class="layui-badge">命令：!进阶装备 </span>
+                      <span class="layui-badge layui-badge-rim">即可完成</span>
+                       
+                    </div>
+                    <table class="layui-table mactable">
+                      <colgroup>
+                        <col width="150">
+                        <col width="150">
+                        <col width="200">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>需要装备</th>
+                          <th>需要升级属性</th>
+                          <th>需要材料</th>
+                          <th>需要元宝</th>
+                          <th>进阶后获得装备</th>
+                        </tr> 
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                             <img src="img/bbg/26.gif" alt="">
+                             <span>血红戒指</span>
+                          </td>
+                          <td>攻击90<br>防御90<br>生命400<br>蓝量400<br></td>
+                          <td>
+                            <img src="img/bbg/900000095.gif" alt="">
+                            <span>五色神珠*5</span>
+                          </td>
+                          <td>50000元宝</td>
+                          <td>
+                            <img src="img/bbg/27.gif" alt="">
+                            <span>狱魔戒指</span>
+                          </td>
+                        </tr>
+                        <tr>
+                         <td>
+                            <img src="img/bbg/14.gif" alt="">
+                            <span>血红耳环</span>
+                         </td>
+                         <td>攻击90<br>防御90<br>生命400<br>蓝量400<br></td>
+                         <td>
+                          <img src="img/bbg/900000095.gif" alt="">
+                          <span>五色神珠*5</span>
+                        </td>
+                         <td>50000元宝</td>
+                         <td>
+                           <img src="img/bbg/15.gif" alt="">
+                           <span>狱魔耳环</span>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td>
+                            <img src="img/bbg/20.gif" alt="">
+                            <span>血红项链</span>
+                         </td>
+                         <td>攻击90<br>防御90<br>生命400<br>蓝量400<br></td>
+                         <td>
+                          <img src="img/bbg/900000095.gif" alt="">
+                          <span>五色神珠*5</span>
+                        </td>
+                         <td>50000元宝</td>
+                         <td>
+                           <img src="img/bbg/21.gif" alt="">
+                           <span>狱魔项链</span>
+                         </td>
+                       </tr>
+                       <tr>
+                        <td>
+                           <img src="img/bbg/27.gif" alt="">
+                           <span>狱魔戒指</span>
+                        </td>
+                        <td>攻击110<br>防御110<br>生命500<br>蓝量500<br></td>
+                        <td>
+                          <img src="img/bbg/900000095.gif" alt="">
+                          <span>五色神珠*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/28.gif" alt="">
+                          <span>傲天戒指</span>
+                        </td>
+                      </tr>
+                      <tr>
+                       <td>
+                          <img src="img/bbg/15.gif" alt="">
+                          <span>狱魔耳环</span>
+                       </td>
+                       <td>攻击110<br>防御110<br>生命500<br>蓝量500<br></td>
+                       <td>
+                        <img src="img/bbg/900000095.gif" alt="">
+                        <span>五色神珠*5</span>
+                      </td>
+                       <td>50000元宝</td>
+                       <td>
+                         <img src="img/bbg/16.gif" alt="">
+                         <span>傲天耳环</span>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                          <img src="img/bbg/21.gif" alt="">
+                          <span>狱魔项链</span>
+                       </td>
+                       <td>攻击110<br>防御110<br>生命500<br>蓝量500<br></td>
+                       <td>
+                        <img src="img/bbg/900000095.gif" alt="">
+                        <span>五色神珠*5</span>
+                      </td>
+                       <td>50000元宝</td>
+                       <td>
+                         <img src="img/bbg/22.gif" alt="">
+                         <span>傲天项链</span>
+                       </td>
+                     </tr>
+
+
+
+                     <tr>
+                      <td>
+                        <img src="img/bbg/28.gif" alt="">
+                        <span>傲天戒指</span>
+                      </td>
+                      <td>攻击130<br>防御130<br>生命600<br>蓝量600<br></td>
+                      <td>
+                        <img src="img/bbg/900000248.gif" alt="">
+                        <span>银河之力*10</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/29.gif" alt="">
+                        <span>星辰戒指</span>
+                      </td>
+                    </tr>
+                    <tr>
+                     <td>
+                      <img src="img/bbg/16.gif" alt="">
+                      <span>傲天耳环</span>
+                     </td>
+                     <td>攻击130<br>防御130<br>生命600<br>蓝量600<br></td>
+                      <td>
+                        <img src="img/bbg/900000248.gif" alt="">
+                        <span>银河之力*10</span>
+                      </td>
+                     <td>50000元宝</td>
+                     <td>
+                       <img src="img/bbg/17.gif" alt="">
+                       <span>星辰耳环</span>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>
+                      <img src="img/bbg/22.gif" alt="">
+                      <span>傲天项链</span>
+                     </td>
+                     <td>攻击130<br>防御130<br>生命600<br>蓝量600<br></td>
+                     <td>
+                       <img src="img/bbg/900000248.gif" alt="">
+                       <span>银河之力*10</span>
+                     </td>
+                     <td>50000元宝</td>
+                     <td>
+                       <img src="img/bbg/23.gif" alt="">
+                       <span>星辰项链</span>
+                     </td>
+                   </tr>
+
+
+
+                   <tr>
+                    <td>
+                      <img src="img/bbg/29.gif" alt="">
+                      <span>星辰戒指</span>
+                    </td>
+                    <td>攻击150<br>防御150<br>生命700<br>蓝量700<br></td>
+                    <td>
+                      <img src="img/bbg/900000248.gif" alt="">
+                      <span>银河之力*10</span>
+                    </td>
+                    <td>50000元宝</td>
+                    <td>
+                      <img src="img/bbg/30.gif" alt="">
+                      <span>绯蓝戒指</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/bbg/17.gif" alt="">
+                      <span>星辰耳环</span>
+                    </td>
+                   <td>攻击150<br>防御150<br>生命700<br>蓝量700<br></td>
+                    <td>
+                      <img src="img/bbg/900000248.gif" alt="">
+                      <span>银河之力*10</span>
+                    </td>
+                   <td>50000元宝</td>
+                   <td>
+                     <img src="img/bbg/18.gif" alt="">
+                     <span>绯蓝耳环</span>
+                   </td>
+                 </tr>
+                 <tr>
+                  <td>
+                    <img src="img/bbg/23.gif" alt="">
+                    <span>星辰项链</span>
+                  </td>
+                   <td>攻击150<br>防御150<br>生命700<br>蓝量700<br></td>
+                   <td>
+                     <img src="img/bbg/900000248.gif" alt="">
+                     <span>银河之力*10</span>
+                   </td>
+                   <td>50000元宝</td>
+                   <td>
+                     <img src="img/bbg/24.gif" alt="">
+                     <span>绯蓝项链</span>
+                   </td>
+                 </tr>
+
+
+
+
+                 <tr>
+                  <td>
+                    <img src="img/bbg/30.gif" alt="">
+                    <span>绯蓝戒指</span>
+                  </td>
+                  <td>攻击170<br>防御170<br>生命800<br>蓝量800<br></td>
+                  <td>
+                    <img src="img/bbg/900000248.gif" alt="">
+                    <span>银河之力*10</span>
+                  </td>
+                  <td>50000元宝</td>
+                  <td>
+                    <img src="img/bbg/31.gif" alt="">
+                    <span>真-绯蓝戒指</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/bbg/18.gif" alt="">
+                   <span>绯蓝耳环</span>
+                  </td>
+                  <td>攻击170<br>防御170<br>生命800<br>蓝量800<br></td>
+                  <td>
+                    <img src="img/bbg/900000248.gif" alt="">
+                    <span>银河之力*10</span>
+                  </td>
+                 <td>50000元宝</td>
+                 <td>
+                   <img src="img/bbg/19.gif" alt="">
+                   <span>真-绯蓝耳环</span>
+                 </td>
+               </tr>
+               <tr>
+                <td>
+                  <img src="img/bbg/24.gif" alt="">
+                   <span>绯蓝项链</span>
+                </td>
+                <td>攻击170<br>防御170<br>生命800<br>蓝量800<br></td>
+                 <td>
+                   <img src="img/bbg/900000248.gif" alt="">
+                   <span>银河之力*10</span>
+                 </td>
+                 <td>50000元宝</td>
+                 <td>
+                   <img src="img/bbg/25.gif" alt="">
+                   <span>真-绯蓝项链</span>
+                 </td>
+               </tr>
+
+
+                       
+                      </tbody>
+                    </table>
+                 
+                </div>
+             </div>
+
+             <div class="layui-tab-item">
+              <div class="shgame">
+               <blockquote class="layui-elem-quote">门甲进阶系统</blockquote>
+               <div class="game-text">
+                  <span class="layui-badge layui-badge-rim">把门甲类装备放在背包第一格 游戏内输入</span>
+                  <span class="layui-badge">命令：!进阶装备 </span>
+                  <span class="layui-badge layui-badge-rim">即可完成（用于斗神门甲进阶升级）</span>
+                  
+               </div>
+               
+                  <table class="layui-table mactable">
+                     <colgroup>
+                       <col width="150">
+                       <col width="150">
+                       <col width="200">
+                       <col>
+                     </colgroup>
+                     <thead>
+                       <tr>
+                         <th>需要装备</th>
+                         <th>需要升级属性</th>
+                         <th>需要强化属性</th>
+                         <th>需要材料</th>
+                         <th>需要元宝</th>
+                         <th>进阶后获得装备</th>
+                       </tr> 
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>
+                            <img src="img/bbg/900000062.gif" alt="">
+                            <span>斗神门甲</span>
+                         </td>
+                         <td>攻击120<br>防御120</td>
+                         <td>强化20</td>
+                         <td>
+                           <img src="img/bbg/900000073.gif" alt="">
+                           <span>神石</span>
+                         </td>
+                         <td>10000元宝</td>
+                         <td>
+                           <img src="img/bbg/36.gif" alt="">
+                           <span>焚寂门甲[神]</span>
+                         </td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   
+                   <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                     <legend>高级门甲进阶</legend>
+                   </fieldset>
+                   <blockquote class="layui-elem-quote layui-quote-nm">
+                    说明：为了更好的提高游戏体验，高级门甲进阶只限于综合大区，新区封印此升级功能。
+                    <br>合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表各职业方法相同
+                  </blockquote>
+                   <div class="game-text">
+                    <span class="layui-badge layui-badge-rim">把门甲类装备放在背包第一格 游戏内输入</span>
+                    <span class="layui-badge">命令：!进阶装备 </span>
+                    <span class="layui-badge layui-badge-rim">即可完成</span>
+                     
+                  </div>
+                  <table class="layui-table mactable">
+                    <colgroup>
+                      <col width="150">
+                      <col width="150">
+                      <col width="200">
+                      <col>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>需要装备</th>
+                        <th>需要升级属性</th>
+                        <th>需要强化属性</th>
+                        <th>需要材料</th>
+                        <th>需要元宝</th>
+                        <th>进阶后获得装备</th>
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                           <img src="img/bbg/36.gif" alt="">
+                           <span>焚寂门甲[神]</span>
+                        </td>
+                        <td>攻击140<br>防御140</td>
+                        <td>强化20</td>
+                        <td>
+                          <img src="img/bbg/900000089.gif" alt="">
+                          <span>五色神玉*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/41.gif" alt="">
+                          <span>龙渊门甲[神]</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                           <img src="img/bbg/41.gif" alt="">
+                           <span>龙渊门甲[神]</span>
+                        </td>
+                        <td>攻击160<br>防御160</td>
+                        <td>强化20</td>
+                        <td>
+                          <img src="img/bbg/900000089.gif" alt="">
+                          <span>五色神玉*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/46.gif" alt="">
+                          <span>东皇门甲[神]</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img src="img/bbg/46.gif" alt="">
+                          <span>东皇门甲[神]</span>
+                        </td>
+                        <td>攻击180<br>防御180</td>
+                        <td>强化20</td>
+                        <td>
+                          <img src="img/bbg/900000224.gif" alt="">
+                          <span>太古的神力精华*5</span><br>
+                          <img src="img/bbg/900000250.gif" alt="">
+                          <span>天穹之神的证明*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/51.gif" alt="">
+                          <span>天穹门甲[神]</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img src="img/bbg/51.gif" alt="">
+                          <span>天穹门甲[神]</span>
+                        </td>
+                        <td>攻击200<br>防御200</td>
+                        <td>强化20</td>
+                        <td>
+                          <img src="img/bbg/900000224.gif" alt="">
+                          <span>太古的神力精华*5</span><br>
+                          <img src="img/bbg/900000251.gif" alt="">
+                          <span>沧海之神的证明*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/56.gif" alt="">
+                          <span>沧海门甲[神]</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img src="img/bbg/56.gif" alt="">
+                          <span>沧海门甲[神]</span>
+                        </td>
+                        <td>攻击220<br>防御220</td>
+                        <td>强化20</td>
+                        <td>
+                          <img src="img/bbg/900000224.gif" alt="">
+                          <span>太古的神力精华*5</span><br>
+                          <img src="img/bbg/900000252.gif" alt="">
+                          <span>万神之神的证明*5</span>
+                        </td>
+                        <td>50000元宝</td>
+                        <td>
+                          <img src="img/bbg/61.gif" alt="">
+                          <span>万神门甲[神]</span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+               
+              </div>
+           </div>
+
+           <div class="layui-tab-item ">
+            <div class="shgame">
+             <blockquote class="layui-elem-quote">内甲进阶系统</blockquote>
+             <div class="game-text">
+                <span class="layui-badge layui-badge-rim">把内甲类装备放在背包第一格 游戏内输入</span>
+                <span class="layui-badge">命令：!进阶装备 </span>
+                <span class="layui-badge layui-badge-rim">即可完成（用于斗神内甲进阶升级）</span>
+                
+             </div>
+             
+                <table class="layui-table mactable">
+                   <colgroup>
+                     <col width="150">
+                     <col width="150">
+                     <col width="200">
+                     <col>
+                   </colgroup>
+                   <thead>
+                     <tr>
+                       <th>需要装备</th>
+                       <th>需要升级属性</th>
+                       <th>需要强化属性</th>
+                       <th>需要材料</th>
+                       <th>需要元宝</th>
+                       <th>进阶后获得装备</th>
+                     </tr> 
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td>
+                          <img src="img/bbg/900000063.gif" alt="">
+                          <span>斗神内甲</span>
+                       </td>
+                       <td>攻击120<br>防御120</td>
+                       <td>强化20</td>
+                       <td>
+                         <img src="img/bbg/900000073.gif" alt="">
+                         <span>神石</span>
+                       </td>
+                       <td>10000元宝</td>
+                       <td>
+                         <img src="img/bbg/35.gif" alt="">
+                         <span>焚寂战甲[神]</span>
+                       </td>
+                     </tr>
+                   </tbody>
+                 </table>
+                 
+                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                   <legend>高级内甲进阶</legend>
+                 </fieldset>
+                 <blockquote class="layui-elem-quote layui-quote-nm">
+                  说明：为了更好的提高游戏体验，高级内甲进阶只限于综合大区，新区封印此升级功能。
+                  <br>合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表各职业方法相同
+                </blockquote>
+                 <div class="game-text">
+                  <span class="layui-badge layui-badge-rim">把内甲类装备放在背包第一格 游戏内输入</span>
+                  <span class="layui-badge">命令：!进阶装备 </span>
+                  <span class="layui-badge layui-badge-rim">即可完成</span>
+                   
+                </div>
+                <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>需要装备</th>
+                      <th>需要升级属性</th>
+                      <th>需要强化属性</th>
+                      <th>需要材料</th>
+                      <th>需要元宝</th>
+                      <th>进阶后获得装备</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/35.gif" alt="">
+                         <span>焚寂战甲[神]</span>
+                      </td>
+                      <td>攻击140<br>防御140</td>
+                      <td>强化20</td>
+                      <td>
+                        <img src="img/bbg/900000089.gif" alt="">
+                        <span>五色神玉*5</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/40.gif" alt="">
+                        <span>龙渊战甲[神]</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="img/bbg/40.gif" alt="">
+                        <span>龙渊战甲[神]</span>
+                      </td>
+                      <td>攻击160<br>防御160</td>
+                      <td>强化20</td>
+                      <td>
+                        <img src="img/bbg/900000089.gif" alt="">
+                        <span>五色神玉*5</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/45.gif" alt="">
+                        <span>东皇战甲[神]</span>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>
+                        <img src="img/bbg/45.gif" alt="">
+                        <span>东皇战甲[神]</span>
+                      </td>
+                      <td>攻击180<br>防御180</td>
+                      <td>强化20</td>
+                      <td>
+                        <img src="img/bbg/900000224.gif" alt="">
+                        <span>太古的神力精华*5</span><br>
+                        <img src="img/bbg/900000250.gif" alt="">
+                        <span>天穹之神的证明*5</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/50.gif" alt="">
+                        <span>天穹战甲[神]</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <img src="img/bbg/50.gif" alt="">
+                        <span>天穹战甲[神]</span>
+                      </td>
+                      <td>攻击200<br>防御200</td>
+                      <td>强化20</td>
+                      <td>
+                        <img src="img/bbg/900000224.gif" alt="">
+                        <span>太古的神力精华*5</span><br>
+                        <img src="img/bbg/900000251.gif" alt="">
+                        <span>沧海之神的证明*5</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/55.gif" alt="">
+                        <span>沧海战甲[神]</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <img src="img/bbg/55.gif" alt="">
+                        <span>沧海战甲[神]</span>
+                      </td>
+                      <td>攻击220<br>防御220</td>
+                      <td>强化20</td>
+                      <td>
+                        <img src="img/bbg/900000224.gif" alt="">
+                        <span>太古的神力精华*5</span><br>
+                        <img src="img/bbg/900000252.gif" alt="">
+                        <span>万神之神的证明*5</span>
+                      </td>
+                      <td>50000元宝</td>
+                      <td>
+                        <img src="img/bbg/60.gif" alt="">
+                        <span>万神战甲[神]</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+             
+            </div>
+         </div>
+
+         <div class="layui-tab-item">
+          <div class="shgame">
+            <blockquote class="layui-elem-quote">装备属性进阶系统</blockquote>
+            <div class="game-text">
+               <span class="layui-badge layui-badge-rim">把装备放在背包第一格 游戏内输入</span>
+               <span class="layui-badge">命令：!进阶装备属性 </span>
+               <span class="layui-badge layui-badge-rim">即可完成</span>
+               
+            </div>
+            <blockquote class="layui-elem-quote layui-quote-nm">
+              说明：此进阶装备属性 可提升装备有 北海以上 所有 武器/防具/内甲/门甲/首饰，法器/宠物除外。
+              <br>部分物品需要 合区后可解锁 新地图 虎峡谷/万魔窟 以及 新材料 等进阶物品，下表各职业方法相同
+            </blockquote>
+               <table class="layui-table">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>需要装备</th>
+                      <th>初始属性</th>
+                      <th>进阶属性峰值</th>
+                      <th>进阶属性增幅</th>
+                      <th>需要材料</th>
+                      <th>需要元宝</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/101200001.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG60</td>
+                      <td>WG70</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100200821.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG70</td>
+                      <td>WG80</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201037.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG80</td>
+                      <td>WG100</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201039.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG100</td>
+                      <td>WG120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201230.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG120</td>
+                      <td>WG140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201250.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG140</td>
+                      <td>WG160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201251.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG160</td>
+                      <td>WG180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+
+                   
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000056.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G50/F50/HP200/MP200</td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000057.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G50/F50/HP200/MP200</td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000058.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G50/F50/HP200/MP200</td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/14.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/20.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/26.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G70/F70/HP300/MP300</td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/15.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/21.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/27.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G90/F90/HP400/MP400</td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/16.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/22.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/28.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G110/F110/HP500/MP500</td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000059.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF100</td>
+                      <td>WF120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000060.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF100</td>
+                      <td>WF120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000061.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF100</td>
+                      <td>WF120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000062.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G100 / F100</td>
+                      <td>G120 / F120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000063.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G100 / F100</td>
+                      <td>G120 / F120</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/32.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF120</td>
+                      <td>WF140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/33.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF120</td>
+                      <td>WF140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/34.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF120</td>
+                      <td>WF140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/35.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G120 / F120</td>
+                      <td>G140 / F140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/36.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G120 / F120</td>
+                      <td>G140 / F140</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/37.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF140</td>
+                      <td>WF160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/38.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF140</td>
+                      <td>WF160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/39.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF140</td>
+                      <td>WF160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/40.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G140 / F140</td>
+                      <td>G160 / F160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/41.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G140 / F140</td>
+                      <td>G160 / F160</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/42.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF160</td>
+                      <td>WF180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/43.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF160</td>
+                      <td>WF180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/44.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF160</td>
+                      <td>WF180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/45.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G160 / F160</td>
+                      <td>G180 / F180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/46.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G160 / F160</td>
+                      <td>G180 / F180</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石*5</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201252.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG180</td>
+                      <td>WG200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201253.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG200</td>
+                      <td>WG220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/100201254.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WG220</td>
+                      <td>WG240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>10000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/17.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/23.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/29.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G130/F130/HP600/MP600</td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/18.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/24.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/30.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G150/F150/HP700/MP700</td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/19.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>G190/F190/HP900/MP900</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/25.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>G190/F190/HP900/MP900</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/31.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G170/F170/HP800/MP800</td>
+                      <td>G190/F190/HP900/MP900</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/47.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF180</td>
+                      <td>WF200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/48.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF180</td>
+                      <td>WF200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/49.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF180</td>
+                      <td>WF200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/50.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G180 / F180</td>
+                      <td>G200 / F200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/51.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G180 / F180</td>
+                      <td>G200 / F200</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/52.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF200</td>
+                      <td>WF220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/53.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF200</td>
+                      <td>WF220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/54.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF200</td>
+                      <td>WF220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/55.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G200 / F200</td>
+                      <td>G220 / F220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/56.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G200 / F200</td>
+                      <td>G220 / F220</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/57.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF220</td>
+                      <td>WF240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/58.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF220</td>
+                      <td>WF240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/59.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>WF220</td>
+                      <td>WF240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/60.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G220 / F220</td>
+                      <td>G240 / F240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/61.gif" alt="">
+                         <span></span>
+                      </td>
+                      <td>G220 / F220</td>
+                      <td>G240 / F240</td>
+                      <td>1点</td>
+                      <td>
+                        <img src="img/bbg/900000249.gif" alt="">
+                        <span>上古之心*1</span>
+                      </td>
+                      <td>1000元宝</td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                
+               
+              
+            
+           </div>
+         </div>
+
+         <div class="layui-tab-item  ">
+          <div class="shgame">
+            <blockquote class="layui-elem-quote">材料合成系统</blockquote>
+            <div class="game-text">
+               <span class="layui-badge layui-badge-rim">游戏中材料到达要求数量</span>
+               <span class="layui-badge">右键材料即可合成</span>
+              
+               
+            </div>
+            
+               <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>材料</th>
+                      <th>需要碎片</th>
+                      <th>需要碎片数量</th>
+                     
+                      <th>需要元宝</th>
+                      <th>碎片出处</th>
+
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        
+                         <img src="img/bbg/900000073.gif" alt="">
+                        <span>神石</span>
+                      </td>
+                      <td>
+                        <img src="img/bbg/900000074.gif" alt="">
+                        <span>神石碎片</span>
+                      </td>
+                      <td>100个</td>
+                      <td>10000元宝</td>
+                      
+                      <td> <span>全图BOSS掉落</span><br><img src="img/bbg/1000000071.gif" alt=""> 斗神宝箱<img src="img/bbg/1000000251.gif" alt=""> 冰灵宝盒<img src="img/bbg/1000000023.gif" alt=""> 符文之盒<img src="img/bbg/1000000026.gif" alt=""> 神匠之盒</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>材料</th>
+                      <th>需要材料</th>
+                      <th>需要强化石数量</th>
+                     
+                      <th>需要元宝</th>
+                      <th>强化石出处</th>
+
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        
+                         <img src="img/bbg/900000080.gif" alt="">
+                        <span>高级强化石</span>
+                      </td>
+                      <td>
+                        
+                        <img src="img/bbg/900000073.gif" alt=""><span>神石*1</span>
+                        <img src="img/bbg/800000006.gif" alt=""><span>强化石*1000</span>
+                      </td>
+                      <td>强化1000个+神石1个</td>
+                      <td>10000元宝</td>
+                      
+                      <td> <span>全图掉落</span></td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>材料</th>
+                      
+                      <th>材料出处</th>
+
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        
+                         
+
+                        <img src="img/bbg/900000055.gif" alt="">
+                        <span>天机石</span> 
+                      
+
+                      </td>
+                      
+                      <td> <span>全图BOSS掉落</span><br><img src="img/bbg/1000000071.gif" alt=""> 斗神宝箱<img src="img/bbg/1000000251.gif" alt=""> 冰灵宝盒<img src="img/bbg/1000000023.gif" alt=""> 符文之盒<img src="img/bbg/1000000026.gif" alt=""> 神匠之盒</td>
+                      
+                    </tr>
+                    
+                   
+                    
+                   
+                   
+                   
+                   
+                  </tbody>
+                </table>
+                
+                
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                  <legend>高级材料系统</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                 说明：为了更好的提高游戏体验，高级内甲进阶只限于综合大区，新区封印此升级功能。
+                 <br>合区后可解锁 新地图 虎峡谷 以及 新材料 等进阶物品
+               </blockquote>
+                
+               <table class="layui-table mactable">
+                <colgroup>
+                  <col width="150">
+                  <col width="150">
+                  <col width="200">
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>材料</th>
+                    
+                    <th>材料出处</th>
+
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      
+                       
+
+                      <img src="img/bbg/900000084.gif" alt="">金灵神玉 
+                      <img src="img/bbg/900000085.gif" alt="">木灵神玉 
+                      <img src="img/bbg/900000086.gif" alt="">水灵神玉 
+                      <img src="img/bbg/900000087.gif" alt="">火灵神玉 
+                      <img src="img/bbg/900000088.gif" alt="">土灵神玉 
+                      <img src="img/bbg/900000090.gif" alt="">金灵神珠 
+                      <img src="img/bbg/900000091.gif" alt="">木灵神珠 
+                      <img src="img/bbg/900000092.gif" alt="">水灵神珠 
+                      <img src="img/bbg/900000093.gif" alt="">火灵神珠 
+                      <img src="img/bbg/900000094.gif" alt="">土灵神珠 
+                      <img src="img/bbg/900000096.gif" alt="">九天神炉 
+
+                    </td>
+                    
+                    <td><img src="img/bbg/1000000023.gif" alt=""> 符文之盒</td>
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       
+
+                      <img src="img/bbg/900000219.gif" alt="">太古天穹之魂<br>
+                      <img src="img/bbg/900000220.gif" alt="">太古万神之魂<br>
+                      <img src="img/bbg/900000221.gif" alt="">太古沧海之魂<br>
+                      <img src="img/bbg/900000222.gif" alt="">太古圣王之魂<br>
+                      <img src="img/bbg/900000223.gif" alt="">太古洪荒之魂<br>
+
+                    </td>
+                    
+                    <td>副本\BOSS之家\万魔窟和地宫掉落</td>
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       
+
+                      <img src="img/bbg/900000224.gif" alt="">太古号角[太]<br>
+                      <img src="img/bbg/900000225.gif" alt="">太古号角[古]<br>
+                      <img src="img/bbg/900000226.gif" alt="">太古号角[神]<br>
+                      <img src="img/bbg/900000227.gif" alt="">太古号角[战]<br>
+                      <img src="img/bbg/900000228.gif" alt="">太古号角[意]<br>
+                      <img src="img/bbg/900000256.gif" alt="">白虎神魂<br>
+                      <img src="img/bbg/900000257.gif" alt="">玄武神魂<br>
+                      <img src="img/bbg/900000258.gif" alt="">青龙神魂<br>
+                      <img src="img/bbg/900000259.gif" alt="">朱雀神魂<br>
+
+                    </td>
+                    
+                    <td>副本\BOSS之家和地宫掉落</td>
+                    
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       
+
+                      <img src="img/bbg/900000250.gif" alt="">天穹之神的证明<br>
+                      <img src="img/bbg/900000251.gif" alt="">万神之神的证明<br>
+                      <img src="img/bbg/900000252.gif" alt="">沧海之神的证明<br>
+                      
+
+                    </td>
+                    
+                    <td>上古黑盒开出</td>
+                    
+                  </tr>
+                  
+                 
+                  
+                 
+                 
+                 
+                 
+                </tbody>
+              </table>
+              <table class="layui-table mactable">
+                <colgroup>
+                  <col width="150">
+                  <col width="150">
+                  <col width="200">
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>材料</th>
+                    <th>需要材料</th>
+                    <th>需要碎片数量</th>
+                   
+                    <th>需要元宝</th>
+                    
+
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000089.gif" alt="">
+                      <span>五色神玉</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000084.gif" alt="">金灵神玉*20
+                      <img src="img/bbg/900000085.gif" alt="">木灵神玉*20
+                      <img src="img/bbg/900000086.gif" alt="">水灵神玉*20
+                      <img src="img/bbg/900000087.gif" alt="">火灵神玉*20
+                      <img src="img/bbg/900000088.gif" alt="">土灵神玉*20
+                      <img src="img/bbg/900000096.gif" alt="">九天神炉* 1 
+                    </td>
+                    <td>金木水火土神玉各*20<br>九天神炉* 1 </td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000095.gif" alt="">
+                      <span>五色神珠</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000090.gif" alt="">金灵神珠*20
+                      <img src="img/bbg/900000091.gif" alt="">木灵神珠*20
+                      <img src="img/bbg/900000092.gif" alt="">水灵神珠*20
+                      <img src="img/bbg/900000093.gif" alt="">火灵神珠*20
+                      <img src="img/bbg/900000094.gif" alt="">土灵神珠*20
+                      <img src="img/bbg/900000096.gif" alt="">九天神炉* 1 
+                    </td>
+                    <td>金木水火土神珠各*20<br>九天神炉* 1 </td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000149.gif" alt="">
+                      <span>番天印</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000073.gif" alt="">神石*100
+                     
+                    </td>
+                    <td>神石*100</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000154.gif" alt="">
+                      <span>四灵之心</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000150.gif" alt="">朱雀印记*50
+                      <img src="img/bbg/900000151.gif" alt="">玄武印记*50
+                      <img src="img/bbg/900000152.gif" alt="">白虎印记*50
+                      <img src="img/bbg/900000153.gif" alt="">青龙印记*50
+                     
+                      <img src="img/bbg/900000096.gif" alt="">九天神炉* 1 
+                    </td>
+                    <td>雀玄虎龙印记各*50<br>九天神炉* 1 </td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000248.gif" alt="">
+                      <span>银河之力</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000089.gif" alt="">五色神珠*5
+                      <img src="img/bbg/900000095.gif" alt="">五色神玉*5
+                     
+                     
+                      
+                    </td>
+                    <td>五色神珠五色神玉各*5</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000249.gif" alt="">
+                      <span>上古之心</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000055.gif" alt="">天机石*1000
+                      
+                    </td>
+                    <td>天机石*1000</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000224.gif" alt="">
+                      <span>太古的神力精华</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000219.gif" alt="">太古天穹之魂*20<br>
+                      <img src="img/bbg/900000220.gif" alt="">太古万神之魂*20<br>
+                      <img src="img/bbg/900000221.gif" alt="">太古沧海之魂*20<br>
+                      <img src="img/bbg/900000222.gif" alt="">太古圣王之魂*20<br>
+                      <img src="img/bbg/900000223.gif" alt="">太古洪荒之魂*20
+
+                    </td>
+                    <td>天穹万神沧海圣王洪荒之魂各*20</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000230.gif" alt="">
+                      <span>太古的战神号角</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000224.gif" alt="">太古号角[太]*20<br>
+                      <img src="img/bbg/900000225.gif" alt="">太古号角[古]*20<br>
+                      <img src="img/bbg/900000226.gif" alt="">太古号角[神]*20<br>
+                      <img src="img/bbg/900000227.gif" alt="">太古号角[战]*20<br>
+                      <img src="img/bbg/900000228.gif" alt="">太古号角[意]*20
+
+                    </td>
+                    <td>太古神战意号角各*20</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000260.gif" alt="">
+                      <span>四灵之魂</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000256.gif" alt="">白虎神魂*20
+                      <img src="img/bbg/900000257.gif" alt="">玄武神魂*20
+                      <img src="img/bbg/900000258.gif" alt="">青龙神魂*20
+                      <img src="img/bbg/900000259.gif" alt="">朱雀神魂*20
+                      
+
+                    </td>
+                    <td>四神兽神魂各*20</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+
+                </tbody>
+              </table>
+              <table class="layui-table mactable">
+                <colgroup>
+                  <col width="150">
+                  <col width="150">
+                  <col width="200">
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>材料</th>
+                    
+                    <th>材料出处</th>
+
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000121.gif" alt="">正气玄铁
+                      <img src="img/bbg/900000122.gif" alt="">邪火玄铁
+                    </td>
+                    <td><span>虎峡谷-嫦娥BOSS</span><br><img src="img/bbg/1000000026.gif" alt=""> 神匠之盒</td>
+                  </tr>
+                  
+                
+                  <tr>
+                    <td>
+                      <img src="img/bbg/900000114.gif" alt="">刀器魂
+                      <img src="img/bbg/900000115.gif" alt="">剑器魂
+                      <img src="img/bbg/900000116.gif" alt="">枪器魂
+                      <img src="img/bbg/900000117.gif" alt="">弓器魂
+                      <img src="img/bbg/900000118.gif" alt="">医器魂
+                    </td>
+                    <td><img src="img/bbg/1000000026.gif" alt=""> 神匠之盒</td>
+                  </tr>
+
+                 
+                </tbody>
+              </table>
+              <table class="layui-table mactable">
+                <colgroup>
+                  <col width="150">
+                  <col width="150">
+                  <col width="200">
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>武器图纸</th>
+                    <th>需要材料</th>
+                    <th>需要碎片数量</th>
+                   
+                    <th>需要元宝</th>
+                    
+
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000123.gif" alt="">
+                      <span>110级武器打造图纸(刀)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000114.gif" alt="">刀 器 魂
+                     
+                    </td>
+                    <td>武器图纸碎片*100<br>刀器魂*5</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000124.gif" alt="">
+                      <span>110级武器打造图纸(剑)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000115.gif" alt="">剑 器 魂
+                     
+                    </td>
+                    <td>武器图纸碎片*100<br>剑器魂*5</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000125.gif" alt="">
+                      <span>110级武器打造图纸(枪)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000116.gif" alt="">枪 器 魂
+                     
+                    </td>
+                    <td>武器图纸碎片*100<br>枪器魂*5</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000126.gif" alt="">
+                      <span>110级武器打造图纸(弓)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000117.gif" alt="">弓 器 魂
+                     
+                    </td>
+                    <td>武器图纸碎片*100<br>弓器魂*5</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                       <img src="img/bbg/900000127.gif" alt="">
+                      <span>110级武器打造图纸(医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000119.gif" alt="">图纸碎片
+                      <img src="img/bbg/900000118.gif" alt="">医 器 魂
+                     
+                    </td>
+                    <td>武器图纸碎片*100<br>医器魂*5</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000128.gif" alt="">
+                      <img src="img/bbg/900000129.gif" alt="">
+                      <img src="img/bbg/900000130.gif" alt="">
+                      <img src="img/bbg/900000131.gif" alt="">
+                      <img src="img/bbg/900000132.gif" alt="">
+                      <span>120级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000123.gif" alt="">
+                      <img src="img/bbg/900000124.gif" alt="">
+                      <img src="img/bbg/900000125.gif" alt="">
+                      <img src="img/bbg/900000126.gif" alt="">
+                      <img src="img/bbg/900000127.gif" alt="">
+                      <span>110级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>110级武器打造图纸(刀/剑/枪/弓/医)*10</td>
+                    <td>10000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000133.gif" alt="">
+                      <img src="img/bbg/900000134.gif" alt="">
+                      <img src="img/bbg/900000135.gif" alt="">
+                      <img src="img/bbg/900000136.gif" alt="">
+                      <img src="img/bbg/900000137.gif" alt="">
+                      <span>130级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000154.gif" alt="">四灵之心<br>
+                      <img src="img/bbg/900000149.gif" alt="">番 天 印<br>
+                      <img src="img/bbg/900000114.gif" alt="">刀 器 魂
+                    </td>
+                    <td>刀 器 魂*5<br>四灵之心*5<br>番 天 印*1</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000138.gif" alt="">
+                      <img src="img/bbg/900000139.gif" alt="">
+                      <img src="img/bbg/900000140.gif" alt="">
+                      <img src="img/bbg/900000141.gif" alt="">
+                      <img src="img/bbg/900000142.gif" alt="">
+                      <span>130级武器打造图纸真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000133.gif" alt="">
+                      <img src="img/bbg/900000134.gif" alt="">
+                      <img src="img/bbg/900000135.gif" alt="">
+                      <img src="img/bbg/900000136.gif" alt="">
+                      <img src="img/bbg/900000137.gif" alt="">
+                      <span>130级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>130级武器打造图纸(刀/剑/枪/弓/医)*10</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000143.gif" alt="">
+                      <img src="img/bbg/900000144.gif" alt="">
+                      <img src="img/bbg/900000145.gif" alt="">
+                      <img src="img/bbg/900000146.gif" alt="">
+                      <img src="img/bbg/900000147.gif" alt="">
+                      <span>130级武器打造图纸神真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000138.gif" alt="">
+                      <img src="img/bbg/900000139.gif" alt="">
+                      <img src="img/bbg/900000140.gif" alt="">
+                      <img src="img/bbg/900000141.gif" alt="">
+                      <img src="img/bbg/900000142.gif" alt="">
+                      <span>130级武器打造图纸真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>130级武器打造图纸真(刀/剑/枪/弓/医)*5</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000231.gif" alt="">
+                      <img src="img/bbg/900000232.gif" alt="">
+                      <img src="img/bbg/900000233.gif" alt="">
+                      <img src="img/bbg/900000234.gif" alt="">
+                      <img src="img/bbg/900000235.gif" alt="">
+                      <span>140级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000154.gif" alt="">四灵之心<br> 
+                      <img src="img/bbg/900000260.gif" alt="">四灵之魂<br>
+                      <img src="img/bbg/900000230.gif" alt="">太古战神号角<br>
+                      <img src="img/bbg/900000114.gif" alt="">刀 器 魂
+                    </td>
+                    <td>四灵之心*20<br>四灵之魂*20<br>太古的战神号角*20<br>刀器魂*50</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000236.gif" alt="">
+                      <img src="img/bbg/900000237.gif" alt="">
+                      <img src="img/bbg/900000238.gif" alt="">
+                      <img src="img/bbg/900000239.gif" alt="">
+                      <img src="img/bbg/900000240.gif" alt="">
+                      <span>140级武器打造图纸真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000231.gif" alt="">
+                      <img src="img/bbg/900000232.gif" alt="">
+                      <img src="img/bbg/900000233.gif" alt="">
+                      <img src="img/bbg/900000234.gif" alt="">
+                      <img src="img/bbg/900000235.gif" alt="">
+                      <span>140级武器打造图纸(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>140级武器打造图纸(刀/剑/枪/弓/医)*10</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+
+                  <tr>
+                    <td>
+                      
+                      <img src="img/bbg/900000241.gif" alt="">
+                      <img src="img/bbg/900000242.gif" alt="">
+                      <img src="img/bbg/900000243.gif" alt="">
+                      <img src="img/bbg/900000244.gif" alt="">
+                      <img src="img/bbg/900000245.gif" alt="">
+                      <span>140级武器打造图纸神真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>
+                      <img src="img/bbg/900000236.gif" alt="">
+                      <img src="img/bbg/900000237.gif" alt="">
+                      <img src="img/bbg/900000238.gif" alt="">
+                      <img src="img/bbg/900000239.gif" alt="">
+                      <img src="img/bbg/900000240.gif" alt="">
+                      <span>140级武器打造图纸真(刀/剑/枪/弓/医)</span>
+                    </td>
+                    <td>140级武器打造图纸真(刀/剑/枪/弓/医)*5</td>
+                    <td>100000元宝</td>
+                    
+                   
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+              
+           </div>
+         </div>
+
+         <div class="layui-tab-item ">
+          <div class="shgame">
+            <blockquote class="layui-elem-quote">分解装备系统</blockquote>
+            <div class="game-text">
+               <span class="layui-badge layui-badge-rim">百宝阁购买装备分解券</span>
+               <span class="layui-badge">右键使用装备分解券</span>
+               <span class="layui-badge layui-badge-rim">注意：分解装备默认选取背包首个可分解装备进行分解，请把不需要分解装备存入仓库</span>
+               
+            </div>
+            
+               <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>需要装备分解券</th>
+                      <th>可分解装备</th>
+                      <th>分解后得到物品</th>
+                      
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000148.gif" alt="">
+                         <span>装备分解券</span>
+                      </td>
+                      <td>斗神套装及北海魂武武器<br>（不包括灿金北海）</td>
+                      
+                      <td>
+                        <img src="img/bbg/900000074.gif" alt="">
+                        <span>神石碎片</span>
+                      </td>
+                     
+                    </tr>
+
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000247.gif" alt="">
+                         <span>玄铁器魂分解券</span>
+                      </td>
+                      <td>用于分解无用的玄铁和器魂</td>
+                      
+                      <td>
+                        <img src="img/bbg/900000119.gif" alt="">
+                        <span>武器图纸碎片</span>
+                      </td>
+                     
+                    </tr>
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000265.gif" alt="">
+                         <span>神器分解券</span>
+                      </td>
+                      <td>可将WG150的神器分解为188888积分</td>
+                      
+                      <td>
+                        
+                      </td>
+                     
+                    </tr>
+
+                    <tr>
+                      <td>
+                         <img src="img/bbg/900000266.gif" alt="">
+                         <span>刀职业材料转换券</span>
+                      </td>
+                      <td>可将任意职业的图纸和器魂转换为刀</td>
+                      
+                      <td>
+                        
+                      </td>
+                     
+                    </tr>
+
+                  </tbody>
+                </table>
+                
+                
+            
+           </div>
+         </div>
+         <div class="layui-tab-item ">
+          <div class="shgame">
+            <blockquote class="layui-elem-quote">披风加工系统</blockquote>
+            <div class="game-text">
+               <span class="layui-badge">为了更好的游戏体验，新区封印披风加工系统</span>
+               <span class="layui-badge layui-badge-rim">披风加工方法：把所需要加工的披风放到背包第一格</span>
+               <span class="layui-badge">然后输入游戏命令 !披风加工 </span>      
+               
+            </div>
+               <table class="layui-table mactable">
+                  <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>需要披风</th>
+                      <th>需要材料</th>
+                      <th>需要属性</th>
+                      <th>需要元宝</th>
+                      <th>加工增幅属性数</th>
+                      <th>加工增幅属性峰值</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                         
+                         <span>积分披风或</span>
+                         <span>免费披风炼化完成</span>
+                      </td>
+                      <td>
+                        <img src="img/bbg/900000193.gif" alt="">
+                        <span>披风魂石*1</span>
+                      </td>
+                        <td>
+                          <span>攻50/防50/血50/气功12</span>
+                       </td>
+                       <td>
+                        <span>50000元宝</span>
+                     </td>
+                       <td>
+                        <span>每次成功加工增加1点</span>
+                     </td>
+                     <td>
+                      <span>满属性攻500/防500/血500/气功12</span>
+                   </td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
+                <blockquote class="layui-elem-quote">披风加工说明：<br><br>
+                  披风加工为几率性质加工增幅，以下是对应各个属性的成功率<br>
+                  50-100点属性/95%成功率<br>
+                  100-150点属性/85%成功率<br>
+                  150-200点属性/75%成功率<br>
+                  200-250点属性/65%成功率<br>
+                  250-300点属性/55%成功率<br>
+                  300-350点属性/45%成功率<br>
+                  350-400点属性/35%成功率<br>
+                  400-450点属性/25%成功率<br>
+                  450-500点属性/15%成功率<br>
+                  加工几率与当前人物人品值相关，每日签到可获得 5 人品，即成功率增加 5%（几率可叠加）<br>
+                  加工失败后会获得 5% 成功率增加（几率可叠加）<br>
+                  成功加工增幅属性后 人品值清空为0<br>
+                 
+                </blockquote>
+                
+                <blockquote class="layui-elem-quote">没有披风加工保护符情况下说明：<br>
+
+                加工失败后 原披风增加过的属性会衰减一半 如果一直失败直至 掉落到最小需要属性<br>
+                例：当前披风属性：攻150/防150/血150/气功12<br>
+                加工失败后 披风属性：攻100/防100/血100/气功12<br>
+                继续失败后 披风属性：攻75/防75/血75/气功12   /每次减半<br>
+              </blockquote>
+              <blockquote class="layui-elem-quote">有披风加工保护符情况下说明：<br>
+
+                披风保护符可通过百宝进行购买<br>
+                披风加工失败后属性不会衰减，披风魂石不会使用，只使用披风加工保护符<br>
+                每次失败增加5%成功率 直至100%成功
+              </blockquote>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                  <legend>披风加工炼化系统</legend>
+                </fieldset>
+                <div class="game-text">
+                  <span class="layui-badge">炼化方法：免费披风放在背包任意位置 右键使用材料 ：披风炼化石</span>
+                 
+                  <span class="layui-badge">注意：积分披风不可炼化。</span>
+                  <span class="layui-badge">注意：在材料够多，满足多次炼化披风时请注意 不要多次右键使用 披风炼化石 否则会造成重复炼化披风 不予返还</span>
+                  <span class="layui-badge">注意：炼化完加工过属性的披风 不要在进行重复炼化 否则披风属性会初始化 不予返还</span>   
+                  
+               </div>
+                  <table class="layui-table mactable">
+                     <colgroup>
+                       <col width="150">
+                       <col width="150">
+                       <col width="200">
+                       <col>
+                     </colgroup>
+                     <thead>
+                       <tr>
+                         <th>需要披风</th>
+                         <th>需要材料</th>
+                         <th>需要元宝</th>
+                         <th>炼化完属性</th>
+                         
+                       </tr> 
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>
+                            
+                            <span></span>
+                            <span>免费披风</span>
+                         </td>
+                         <td>
+                           <img src="img/bbg/900000195.gif" alt="">
+                           <span>披风炼化石*20</span>
+                         </td>
+                         <td>
+                          <span>100000元宝</span>
+                       </td>
+                           <td>
+                             <span>攻50/防50/血50/气功12</span>
+                          </td>
+                         
+                        
+                       </tr>
+                     </tbody>
+                   </table>
+                   <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>披风加工材料由来</legend>
+                  </fieldset>
+                  <table class="layui-table mactable">
+                    <colgroup>
+                      <col width="150">
+                      <col width="150">
+                      <col width="200">
+                      <col>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>披风加工材料</th>
+                        <th>需要碎片</th>
+                        <th>碎片出处</th>
+                        <th>材料出处</th>
+                        <th>需要元宝</th>
+
+                        
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                           
+                          <img src="img/bbg/900000193.gif" alt="">
+                          <span>披风魂石*1</span>
+                        </td>
+                        <td>
+                          <img src="img/bbg/900000194.gif" alt="">
+                          <span>披风魂石碎片*100</span>
+                        </td>
+                        <td>
+                         <span>符文盒子/神匠之盒/万魔窟</span>
+                      </td>
+                          <td>
+                            <span>万魔窟BOSS直接掉落材料</span>
+                         </td>
+                         <td>
+                          <span>10000元宝</span>
+                       </td>
+                       
+                      </tr>
+                      <tr>
+                        <td>
+                           
+                          <img src="img/bbg/900000195.gif" alt="">
+                          <span>披风炼化石*1</span>
+                        </td>
+                        <td>
+                          <img src="img/bbg/900000196.gif" alt="">
+                          <span>披风炼化石碎片*100</span>
+                        </td>
+                        <td>
+                         <span>符文盒子/神匠之盒/万魔窟</span>
+                      </td>
+                          <td>
+                            <span>万魔窟BOSS直接掉落材料</span>
+                         </td>
+                         <td>
+                          <span>10000元宝</span>
+                       </td>
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+                  <blockquote class="layui-elem-quote">材料说明：<br>
+
+                    集齐碎片100个右键即可炼化为材料
+                  </blockquote>
+           </div>
+         </div>
+
+               </div>
+             </div>
+         </div>
+      </div>
+      <script src="js/jquery-1.3.2.min.js"></script>
+      <script src="layer/layer.js"></script>
+      <script src="layui/layui.js"></script>
+
+         <script>
+           layui.use('element', function(){
+           var element = layui.element;
+         });
+         </script>
+   </body>
+</html>
